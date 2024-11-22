@@ -1,12 +1,12 @@
-import { CurrencyPipe } from '@angular/common';
+//import { CurrencyPipe } from '@angular/common';
 import { Component, computed, inject, Input } from '@angular/core';
 import { CalculoInversionService } from '../calculoInversion.service';
 
 @Component({
   selector: 'app-resultados-inversion',
-  standalone: true,
+  //standalone: true,
   //en est asección importamos los pipes que nos sirve para formatear los datos y represntarlos en valores de moneda
-  imports:[CurrencyPipe],
+  //imports:[CurrencyPipe],
   templateUrl: './resultados-inversion.component.html',
   styleUrl: './resultados-inversion.component.less'
 })

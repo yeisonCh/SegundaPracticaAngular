@@ -1,13 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { CabeceraComponent } from "./cabecera/cabecera.component";
-import { EntradaUsuarioComponent } from "./entrada-usuario/entrada-usuario.component";
+//import { CabeceraComponent } from "./cabecera/cabecera.component";
+//import { EntradaUsuarioComponent } from "./entrada-usuario/entrada-usuario.component";
 //import type { IversionEntrada } from './inversion-entrada.model';
-import { ResultadosInversionComponent } from './resultados-inversion/resultados-inversion.component';
+//import { ResultadosInversionComponent } from './resultados-inversion/resultados-inversion.component';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [CabeceraComponent, EntradaUsuarioComponent,ResultadosInversionComponent],
+  //standalone: true, comentamos standalone e imports para migrar a modulos
+  //imports: [CabeceraComponent, EntradaUsuarioComponent,ResultadosInversionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.less'
 })

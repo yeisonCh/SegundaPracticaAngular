@@ -5,8 +5,8 @@ import { CalculoInversionService } from '../calculoInversion.service';
 
 @Component({
   selector: 'app-entrada-usuario',
-  standalone: true, //para uso de componentes independinetes o autonomos, 
-  imports: [FormsModule],
+  //standalone: true, //para uso de componentes independinetes o autonomos, 
+  //imports: [FormsModule], pero en este caso ya que usamos formularios debemos asegurarnos de anadirlos en Modules.ts
   templateUrl: './entrada-usuario.component.html',
   styleUrl: './entrada-usuario.component.less'
 })
