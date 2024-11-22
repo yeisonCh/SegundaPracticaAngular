@@ -1,0 +1,43 @@
+<!-- comprobamos que no tenemos resultados calculados con @if antes de las etiquetas html
+en proyectos antoguos utilizamos la directiva *ngIf dentro de las etiquetas html
+ejemplo: <p *ngIf="!resultados">Por favor introdusca algunos resultados y pulse !Calcular¡ </p>
+
+en este cado para trabajar con señales o con propiedades debemos tener en cuenta que para señales debemos agrear () a nuestra propiedad resultados 
+-->
+
+ @if(!resultados()){
+    <p>Por favor introdusca algunos resultados y pulse !Calcular¡ </p>
+ }@else{
+
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Valor de la Inversión</th>
+            <th>Interes del Año</th>
+            <th>Interes Totla</th>
+            <th>Capital Invertido</th>
+ 
+        </tr>
+    </thead>
+    <tbody>
+        @for(r of resultados(); track r.annio){
+            <tr>
+                <td>{{r.annio}}</td>
+                        
+                <td>{{r.valorAnualInversion | currency}}</td>
+           
+                <td>{{r.interes | currency}}</td>
+            
+                <td>{{r.interesTotal | currency}}</td>
+           
+                <td>{{r.montoTotalInvertido | currency}}</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+ }
+
+
+
